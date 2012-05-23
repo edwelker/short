@@ -1,0 +1,8 @@
+configparser==3.2.0r3
+mercurial==1.9.1
+ordereddict==1.1
+readline==6.2.1
+unittest2==0.5.1
+virtualenv==1.6.4
+virtualenvwrapper==2.9
+wsgiref==0.1.2
