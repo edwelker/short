@@ -1,3 +1,4 @@
+-e git://github.com/bitly/bitly-api-python.git@3b19d8ab89e0ba821c4b413676cd0c8d157a33fa#egg=bitly_api-dev
 configparser==3.2.0r3
 mercurial==1.9.1
 ordereddict==1.1
