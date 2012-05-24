@@ -6,7 +6,7 @@ Url shortener cgi
 
 import sys, os, cgi
 sys.stderr = sys.stdout
-print "Content-type: text/plain\n\n"
+print "Content-type: text/xml\n\n"
 
 os.environ['VIRTUAL_ENV'] = '/home/welkere/env/short'
 venv = '/home/welkere/env/info/bin/activate_this.py'
@@ -24,6 +24,6 @@ url = form.getvalue('url')
 if url is not None:
     short = shorten_url(url)
 
-    print short['url']
+    print "<url>%s</url>" % short['url']
 else:
-    print "ERROR: no url entered"
+    print "<error>no url entered</error>"
